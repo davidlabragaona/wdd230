@@ -1,0 +1,46 @@
+body {
+    /*display: grid;*/
+    height: 100vh;
+    /*grid-template: auto auto 1fr auto / 300px 1fr auto;*/
+}
+
+header {
+    background: lightpink;
+    padding: 2rem;
+}
+
+nav {
+    background: lightblue;
+}
+
+.left-sidebar {
+    background: lightblue;
+}
+
+main {
+    background: coral;
+    float: left;
+    width: 75.5%;
+    height: 60%;
+}
+
+.right-sidebar {
+    background: yellow;
+    float: right;
+    width: 20%;
+    height: 60%;
+}
+
+footer {
+    background: wheat;
+    padding: 2rem;
+    text-align: center;
+    clear: both;
+}
+
+.left-sidebar,
+.right-sidebar,
+main,
+nav {
+    padding: 1rem;
+}
