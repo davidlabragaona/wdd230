@@ -1,0 +1,41 @@
+@media only screen and (min-width: 620px) {
+    * {
+        border: 1px solid black;
+    }
+
+    header {
+        text-align: center;
+        width: 100%;
+    }
+
+    header img {
+        scale: 100%;
+        margin: 10px 10% 0px;
+        float: left;
+    }
+
+    header span {
+        font-size: 3rem;
+        float: left;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .card {
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    }
+
+
+}

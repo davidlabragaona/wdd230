@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+header {
+    background-color: deepskyblue;
+    height: 11rem;
+    display: block;
+    text-align: center;
+}
+
+header span {
+    height: 100%;
+    position: relative;
+    margin: auto;
+    top: -40%;
+    padding: 4rem;
+}
+
+
+
+body {
+    font-family: "Roboto";
+    font-weight: 400;
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-weight: 100;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid lightgray;
+    margin: 10px;
+}
+
+nav {
+    background-color: deeppink;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: bolder;
+}
+
+.card {
+    margin: 10px;
+    background-color: azure;
+    border-radius: 1rem 1rem 0 0;
+    border: 1px solid darkcyan;
+    overflow: hidden;
+}
+
+.card:nth-child(even) {
+    text-align: center;
+}
+
+.card h2 {
+    background-color: darkcyan;
+    color: white;
+    padding-left: 10px;
+}
+
+.card li {
+    padding: 5px 20px;
+}
+
+footer {
+    background-color: beige;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    /*max-width: 400px;*/
+    overflow: scroll;
+}
