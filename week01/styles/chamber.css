@@ -1,0 +1,53 @@
+* {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F1E9DB;
+}
+
+header {
+    padding: 1em;
+    background-color: #07020D;
+    color: #5DB7DE;
+}
+
+h2 {
+    padding: 2em 0 0 1em;
+}
+
+main p {
+    padding-left: 1.5em;
+}
+
+ul {
+    padding-left: 2.5em;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    border: 1px solid darkgrey;
+}
+
+#d07020D {
+    background-color: #07020D;
+}
+
+#d5db7de {
+    background-color: #5db7de;
+}
+
+#df1e9db {
+    background-color: #f1e9db;
+}
+
+#da39b8b {
+    background-color: #a39b8b;
+}
+
+#d716a5c {
+    background-color: #716a5c;
+}
