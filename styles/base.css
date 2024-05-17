@@ -10,9 +10,10 @@ header {
     height: 150px;
     display: block;
     text-align: center;
+    position: relative;
 }
 
-header img {
+#profile {
     width: 120px;
     height: auto;
     top: 15px;
@@ -56,7 +57,7 @@ nav li {
 }
 
 nav a {
-    display: block;
+    display: none;
     text-align: center;
     text-decoration: none;
     padding: 1rem;
@@ -80,6 +81,7 @@ nav a:hover {
     border-radius: 1rem 1rem 0 0;
     border: 1px solid darkcyan;
     overflow: hidden;
+    color: black;
 }
 
 .card:nth-child(even) {
@@ -100,4 +102,39 @@ footer {
     background-color: beige;
     padding: 10px;
     text-align: center;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+#menu {
+    padding: 0 48%;
+    text-align: center;
+}
+
+.open a {
+    display: block;
+}
+
+#drkBtn {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0em;
+    right: -5em;
+    cursor: pointer;
+}
+
+main.dark {
+    background-color: darkslategray;
+    color: white;
+}
+
+.card.dark {
+    color: black;
 }

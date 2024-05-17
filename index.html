@@ -9,9 +9,8 @@
         content="WDD 230 - Web Frontend Development - David Labra Gaona - Course assignement portal">
     <meta property="og:title" content="WDD 230 - Web Frontend Development - David Labra Gaona">
     <meta property="og:type" content="website">
-    <meta property="og:image"
-        content="https://upload.wikimedia.org/wikipedia/commons/a/a2/Laguna_de_lobos%2C_atardecer.jpg">
-    <meta property="og:url" content="https://davidlabragaona.github.io/">
+    <meta property="og:image" content="https://davidlabragaona.github.io/wdd230/images/profile.jpg">
+    <meta property="og:url" content="https://davidlabragaona.github.io/wdd230/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -24,9 +23,11 @@
 
 <body>
     <header>
-        <img alt="David Labra Gaona profile" src="images/profile.jpg" width="150" height="150">
+        <img id="profile" alt="David Labra Gaona profile" src="images/profile.jpg" width="150" height="150">
         <span>David Labra Gaona</span>
+        <img id="drkBtn" src="images/dark-theme.svg" alt="dark-mode">
     </header>
+    <button id="menu"></button>
     <nav>
         <ul>
             <li><a class="active" href="#">Home</a></li>
@@ -72,6 +73,7 @@
         </p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/common.js"></script>
 </body>
 
 </html>
