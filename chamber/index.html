@@ -6,40 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="David Labra Gaona">
     <meta name="description" content="The Lobos Chamber of Commerce Web site">
-    <meta property="og:title" content="WDD 230 - Web Frontend Development - David Labra Gaona">
+    <meta property="og:title" content="Lobos Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://davidlabragaona.github.io/wdd230/images/profile.jpg">
-    <meta property="og:url" content="https://davidlabragaona.github.io/wdd230/">
+    <meta property="og:image" content="https://www.lobos.gob.ar/sites/default/files/laguna2.jpeg">
+    <meta property="og:url" content="https://davidlabragaona.github.io/wdd230/index.html">
     <title>Lobos Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalyze.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-
+        <h1>Lobos Chamber of Commerce</h1>
     </header>
+    <button id="menu"></button>
     <nav>
         <ul>
-            <li>Home</li>
-            <li>Discover</li>
-            <li>Directory</li>
-            <li>Join</li>
+            <li><a>Home</a></li>
+            <li><a>Discover</a></li>
+            <li><a>Directory</a></li>
+            <li><a>Join</a></li>
         </ul>
 
     </nav>
     <main>
-        <img id="hero-img" alt="hero"
-            src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Plaza_1810_en_Lobos%2C_Argentina.jpg">
-        <a href="#">Join the Lobos Chamber of Commerce</a>
+        <div id="imgcontainer">
+            <img id="hero-img" alt="hero"
+            src="https://www.lobos.gob.ar/sites/default/files/laguna2.jpeg">
+            <div class="cta"><a href="#">Join the Lobos Chamber of Commerce</a></div>
+        </div>
+        <div class="container">
+            <section id="events">
+                <!--Events-->
+                <h3>Events</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit neque itaque, sed ex dolor maxime natus consequuntur aspernatur nobis consectetur illum ipsam. Dolores recusandae aut doloribus voluptatem, reiciendis placeat dolore.</p>
+            </section>
+            <section id="weather">
+                <!--Weather-->
+                <h3>Weather</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum pariatur cupiditate similique aliquam assumenda error unde dolor ratione at repellendus! Distinctio ullam unde expedita earum eum rem odit cupiditate aliquid.</p>
+            </section>
+        </div>
+        <div>
+            <h2>Member Spotlight</h2>
+            <div class="container">
+                
+                <section>
+                    <h3>Member 1</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime modi aliquam, rem magni dolor est quibusdam. Cupiditate, maxime illo officia a quos fugiat praesentium pariatur ipsam ipsum voluptas modi amet.</p>
+                </section>
+                <section>
+                    <h3>Member 2</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis ducimus, veniam facilis eius, officia eos minus natus magni recusandae quod velit nesciunt animi, similique praesentium ipsam provident dolorem cumque enim!</p>
+                </section>
+                <section>
+                    <h3>Member 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis alias dolorem dolore ad totam temporibus soluta omnis iste, hic amet nisi odit? Laudantium quod maxime vero architecto facilis quam unde!</p>
+                </section>
+            </div>
+        </div>
+        
     </main>
     <footer>
-        <p>&copy; David Labra Gaona</p>
-        <p>A WDD 230 project</p>
-        <p>Last Modification date: Today</p>
+        <p>Lobos Chamber of Commerce<br>Las Heras 87, Lobos, Buenos Aires, 7240</p>
+        <p>info@loboschamberofcommerce.org</p>
+        <p><span id="copyright"></span><span id="lastModified"></span></p>
     </footer>
-
+    <script src="scripts/common.js"></script>
+    <script src="scripts/getDates.js"></script>
 </body>
 
 </html>

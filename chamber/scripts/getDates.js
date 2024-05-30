@@ -4,10 +4,10 @@ function getLastModified() {
 
 function getCopyrightYear() {
     const name = 'David Labra Gaona';
-    const location = 'Buenos Aires, Argentina';
+    const course = 'WDD 230 Project';
     const date = new Date();
-    return `${date.getFullYear()} - ${name} - ${location}`;
+    return `&copy; ${date.getFullYear()} Lobos Chamber | <b>${name}</b> | ${course} | `;
 }
 
-document.querySelector("footer").firstElementChild.textContent = getCopyrightYear();
+document.querySelector("#copyright").innerHTML = getCopyrightYear();
 document.querySelector("#lastModified").textContent = getLastModified();
