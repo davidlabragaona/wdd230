@@ -14,10 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <title>David Labra Gaona - WDD 230 - Web Frontend Development</title>
+    <title>Join the Lobos Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -38,30 +39,48 @@
 
     </nav>
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <div class="main-container">
-            <section class="card">
-                <h2>Learning Activities</h2>
-                <ul>
-                    <li>Week 01:<a href="#">Layout</a>|<a href="#">Media query</a>|<a href="#">JS Pen</a></li>
-                    <li>Week 02:<a href="week02/design.html">Design Principles</a>|<a
-                            href="https://codepen.io/David-Ezequiel-Labra-Gaona/pen/wvbKYYQ">CodePen</a>|<a
-                            href="week02/bom.html">BoM Top 10</a></li>
-                    <li>Week 03: <a href="week03/images/lanscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy Loading</a></li>
-                    <li>Week 04:<a href="https://codepen.io/David-Ezequiel-Labra-Gaona/pen/mdYRYNN">Pseudo Classes</a> | <a href="week04/images/exercise.webp">CSS Combinators</a> | <a href="week04/tablebuild.html">Tables</a></li>
-                    <li>Week 05:<a href="#"></a></li>
-                    <li>Week 06:<a href="#"></a></li>
-                </ul>
-            </section>
-            <section class="card">
-                <h2>Information</h2>
-                <ul>
-                    <li>Buenos Aires, Argentina</li>
-                    <li>&#x2600; 76&deg;F - Sunshine</li>
-                    <li>Page visits: 15</li>
-                </ul>
-            </section>
+        <h1>Join Us</h1>
+        <form action="thankyou.html" method="get">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <label for="position">Title/Position:</label>
+            <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@example.com">
+
+            <label for="phone">Mobile Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="organization">Organization Name:</label>
+            <input type="text" id="organization" name="organization" required>
+
+            <label for="membership_level">Membership Level:</label>
+            <select id="membership_level" name="membership_level">
+                <option value="NP">NP Membership (Free)</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select>
+
+            <label for="description">Organization Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <div class="membership-benefits">
+            <p>Membership benefit #1</p>
+            <p>Membership benefit #2</p>
+            <p>Membership benefit #3</p>
         </div>
+        
 
     </main>
     <footer>
