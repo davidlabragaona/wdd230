@@ -1,2 +1,3 @@
-# wdd230
+# WDD230
+
 WDD 230: Web Frontend Development I
