@@ -6,31 +6,48 @@
     <title>David Labra Gaona - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal for David Labra Gaona">
     <meta name="author" content="David Labra Gaona">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
     <header>
-        <img>
-        <span>Name</span>
+        <img src="images/profile.jpg" alt="David Labra Gaona profile" width="75" height="100">
+        <span>David Labra Gaona</span>
     </header>
     <nav>
         <ul>
-            <li>Home</li>
-            <li>Chamber</li>
-            <li>Site Plan</li>
-            <li>Form</li>
+            <li class="active"><a>Home</a></li>
+            <li><a>Chamber</a></li>
+            <li><a>Site Plan</a></li>
+            <li><a>Form</a></li>
         </ul>
     </nav>
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
-        <section class="card">
+        <section class="card twice">
             <h2>Learning Activities</h2>
             <ul>
-                <li>Lorem ipsum dolor</li>
+                <li><a>Week 01</a></li>
+                <li><a>Week 02</a></li>
+                <li><a>Week 03</a></li>
+                <li><a>Week 04</a></li>
+                <li><a>Week 05</a></li>
+                <li><a>Week 06</a></li>
             </ul>
         </section>
         <section class="card">
+            <h2>Information</h2>
+            <p>weather</p>
+            <p>number of visits</p>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p id="first">&copy;</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>
