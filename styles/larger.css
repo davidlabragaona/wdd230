@@ -41,5 +41,13 @@
         margin: 1rem;
     }
 
+    #menu {
+		display: none;
+	}
+
+    .navigation {
+        display: block;
+    }
+
     
 }
